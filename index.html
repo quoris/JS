@@ -1,0 +1,34 @@
+<html>
+<head>
+		<meta charset="utf-8" />
+        <title>Форма регистрации</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="js/script.js"></script>
+</head>
+<body>
+	
+<header>
+<h1>Регистрация</h1>
+</header>
+
+<main>
+<div id="formInformation">
+<form action="#" method="POST" name="regForm">
+<p><label>Введите логин (email): <input type="text" id="login" ></label></p>
+<p><label>Введите пароль: <input type="password" id="password" maxlength="10"></label></p>
+<p>Напишите о себе:</p>
+<p><textarea id="textAbout" cols="50" rows="8" maxlength="200" onclick="length_check(200, 'textAbout', 'counter')" onkeyup="length_check(200, 'textAbout', 'counter')" ></textarea></p>
+<p>Осталось <span id="counter">200 символов</span></p>
+<p><input id="buttonSend" type="image" src="http://innopraktika.ru/upload/medialibrary/5ce/send_message.png" name="Отправить" onclick="return check_data(regForm)" ></p>
+</form>
+</div>
+<main>
+<div style="clear:both"></div>
+
+<footer>
+<p id="textInFooter">© Copyright</p>
+<p id="textInFooter"><a href="#">Политика конфиденциальности</a></p>
+</footer>
+
+</body>
+</html>
